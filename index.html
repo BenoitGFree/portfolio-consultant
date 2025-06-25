@@ -4,46 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio - Consultant en Ingénierie</title>
+  <title>Portfolio - Ingénieur Aéronautique</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Jean Dupont</h1>
-    <p>Consultant en ingénierie | Expert systèmes & développement</p>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="cours.html">Cours</a>
-      <a href="mailto:contact@jeandupont.fr">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Jean Dupont</h1>
+      <p>Consultant en ingénierie aéronautique & développement scientifique</p>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="cours.html">Cours</a>
+        <a href="mailto:contact@jeandupont.fr">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="presentation">
-      <img src="images/photo-profil.jpg" alt="Photo de profil">
+  <main class="container">
+    <section class="hero">
+      <img src="images/photo-profil.jpg" alt="Jean Dupont">
       <div>
         <h2>À propos</h2>
         <p>
-          Ingénieur freelance avec 10+ ans d'expérience, j'interviens sur des projets techniques en conception, simulation et développement logiciel.
-        </p>
-        <p>
-          Mon expertise : systèmes embarqués, Python, automatisation, méthodes numériques.
+          Ingénieur freelance spécialisé en aéronautique, simulation numérique et développement Python. 
+          J'interviens sur des projets critiques dans les domaines des structures, des fluides et de l'automatisation.
         </p>
       </div>
     </section>
 
-    <section class="projets">
-      <h2>Quelques projets</h2>
-      <ul>
-        <li><strong>Optimisation d'un algorithme de simulation thermique</strong> – Projet client en Python/Numpy</li>
-        <li><strong>Développement d'outils internes pour un bureau d'étude</strong> – Génération de rapports en HTML/Excel</li>
-        <li><strong>Formateur indépendant</strong> – Cours sur la thermodynamique et les outils scientifiques</li>
-      </ul>
+    <section class="projects">
+      <h2>Projets récents</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Optimisation aérodynamique</h3>
+          <p>Développement d’un outil Python pour l’analyse CFD de profils d’aile.</p>
+        </div>
+        <div class="project-card">
+          <h3>Simulation thermique avionique</h3>
+          <p>Modèle de dissipation thermique dans les baies électroniques pour un équipementier aéronautique.</p>
+        </div>
+        <div class="project-card">
+          <h3>Génération automatique de rapports</h3>
+          <p>Pipeline HTML + Excel automatisé pour bureau d’étude.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© Jean Dupont – 2025</p>
+    <div class="container">
+      <p>© Jean Dupont – 2025</p>
+    </div>
   </footer>
 </body>
 </html>

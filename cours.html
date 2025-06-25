@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<script>
+  if (localStorage.getItem("auth") !== "ok") {
+    window.location.href = "login.html";
+  }
+</script>
+
   <header>
     <div class="container">
       <h1>Cours & Ressources</h1>

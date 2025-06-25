@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 100px auto;
+      background: white;
+      padding: 2em;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+    input[type="password"] {
+      padding: 0.5em;
+      width: 100%;
+      margin-top: 1em;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.7em 2em;
+      background-color: #005a87;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Accès au site</h2>
+    <p>Mot de passe requis :</p>
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="checkPassword()">Entrer</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const pwd = document.getElementById("password").value;
+      if (pwd === "freelance") {
+        localStorage.setItem("auth", "ok");
+        window.location.href = "index.html";
+      } else {
+        document.getElementById("error").innerText = "Mot de passe incorrect.";
+      }
+    }
+  </script>
+</body>
+</html>
